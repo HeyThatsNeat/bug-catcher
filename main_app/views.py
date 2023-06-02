@@ -1,14 +1,17 @@
 from django.shortcuts import render
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from .models import Bug
 
-
+@login_required
 def bug_index(request):
   bugs = Bug.objects.filter(user=request.user)
   return render(request, 'bugs/index.html', { 'bugs': bugs })
 
+@login_required
 def bug_detail(request, bug_id):
   bug = Bug.objects.get(id=bug_id)
   return render(request, 'bugs/detail.html', { 'bug': bug })
@@ -16,7 +19,7 @@ def bug_detail(request, bug_id):
 class Home(LoginView):
   template_name = 'home.html'
 
-# class BugCreate(CreateView):
+# class BugCreate(LoginRequiredMixin, CreateView):
 #   model = Bug
 #   fields = ['name', 'breed', 'description', 'age']
   
