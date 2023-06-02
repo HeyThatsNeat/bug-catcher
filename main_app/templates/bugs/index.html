@@ -18,7 +18,7 @@
 <section class="card-container">
   {% for bug in bugs %}
     <div class="card">
-      <a href="/bugs/{{ bug.id }}">
+      <a href="{% url 'bug-detail' bug.id %}">
         <div class="card-content">
           <div class="card-img-container">
             <img 
