@@ -18,18 +18,23 @@
 <section class="card-container">
   {% for bug in bugs %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-  
+      <a href="/bugs/{{ bug.id }}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/sk8r-boi-bug.svg' %}" 
+              alt="A skater boy bug"
+            >
+          </div>
+          <h2 class="card-title">{{ bug.name }}</h2>
+          {% if bug.age > 0 %}
+            <p>A {{ bug.age }} year old {{ bug.breed }}</p>
+          {% else %}
+            <p>A {{ bug.breed }} kitten.</p>
+          {% endif %}
+          <p><small>{{ bug.description }}</small></p>
         </div>
-        <h2 class="card-title">{{ bug.name }}</h2>
-        {% if bug.age > 0 %}
-          <p>A {{ bug.age }} year old {{ bug.breed }}</p>
-        {% else %}
-          <p>A {{ bug.breed }} buggy.</p>
-        {% endif %}
-        <p><small>{{ bug.description }}</small></p>
-      </div>
+      </a>
     </div>
   {% endfor %}
 </section>
