@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/bugs/bug-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>Bug List</h1>
+</section>
+
+<section class="card-container">
+  {% for bug in bugs %}
+    <div class="card">
+      <div class="card-content">
+        <div class="card-img-container">
+  
+        </div>
+        <h2 class="card-title">{{ bug.name }}</h2>
+        {% if bug.age > 0 %}
+          <p>A {{ bug.age }} year old {{ bug.breed }}</p>
+        {% else %}
+          <p>A {{ bug.breed }} buggy.</p>
+        {% endif %}
+        <p><small>{{ bug.description }}</small></p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
