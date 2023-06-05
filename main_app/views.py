@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
+from django.views.generic.edit import CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from .models import Bug
@@ -19,13 +20,13 @@ def bug_detail(request, bug_id):
 class Home(LoginView):
   template_name = 'home.html'
 
-# class BugCreate(LoginRequiredMixin, CreateView):
-#   model = Bug
-#   fields = ['name', 'breed', 'description', 'age']
+class BugCreate(LoginRequiredMixin, CreateView):
+  model = Bug
+  fields = ['name', 'breed', 'description', 'age']
   
-#   def form_valid(self, form):
-#     form.instance.user = self.request.user
-#     return super().form_valid(form)
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
 
 def signup(request):
   error_message = ''
