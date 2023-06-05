@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from .models import Bug
@@ -27,6 +27,14 @@ class BugCreate(LoginRequiredMixin, CreateView):
   def form_valid(self, form):
     form.instance.user = self.request.user
     return super().form_valid(form)
+
+class BugUpdate(UpdateView):
+  model = Bug
+  fields = ['breed', 'description', 'age']
+
+class BugDelete(DeleteView):
+  model = Bug
+  success_url = '/bugs/'
 
 def signup(request):
   error_message = ''

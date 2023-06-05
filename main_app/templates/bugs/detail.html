@@ -26,6 +26,10 @@
       <h2>A {{ bug.breed }} buggy.</h2>
     {% endif %}
     <p>{{ bug.description }}</p>
+    <div class="bug-actions">
+      <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'bug-delete' bug.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 
