@@ -8,13 +8,12 @@
 {% block content %}
 
 <div class="page-header">
-  {% if cat %}
-    <h1>Edit {{ cat.name }}</h1>
+  {% if bug %}
+    <h1>Edit {{ bug.name }}</h1>
   {% else %}
-    <h1>Add a Cat</h1>
+    <h1>Add a Bug</h1>
+    <img src="{% static 'images/nerd-bug.svg' %}" alt="A bug using a computer"/>
   {% endif %}
-  <h1>Add a Bug</h1>
-  <img src="{% static 'images/nerd-bug.svg' %}" alt="A bug using a computer"/>
 </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}

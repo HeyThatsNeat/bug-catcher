@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
@@ -43,7 +43,7 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       login(request, user)
-      return redirect('cat-index')
+      return redirect('bug-index')
     else:
       error_message = 'Invalid sign up - try again'
   form = UserCreationForm()
