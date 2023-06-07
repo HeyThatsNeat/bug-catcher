@@ -22,7 +22,7 @@ class Home(LoginView):
 
 class BugCreate(LoginRequiredMixin, CreateView):
   model = Bug
-  fields = ['name', 'breed', 'description', 'age']
+  fields = ['subject', 'bugged_Code', 'fixed_Code', 'age']
   
   def form_valid(self, form):
     form.instance.user = self.request.user
@@ -30,7 +30,7 @@ class BugCreate(LoginRequiredMixin, CreateView):
 
 class BugUpdate(UpdateView):
   model = Bug
-  fields = ['breed', 'description', 'age']
+  fields = ['bugged_Code', 'fixed_Code', 'age']
 
 class BugDelete(DeleteView):
   model = Bug

@@ -6,19 +6,18 @@
 {% endblock %}
 
 {% block content %}
+<img class="bug-container" src="{% static 'images/computer-ladybug-transformed.jpg' %}" alt="The Bug Collector Bug" />
 
 <section class="logo-container">
-  <div class="bug-container">
-    <img src="{% static 'images/splash.svg' %}" alt="The Bug Collector Bug" />
-  </div>
-  <img 
-    src="{% static 'images/logotype.svg' %}" 
-    alt="Text reads: Bug Collector"
-  />
 </section>
 {% if not user.is_authenticated %}
-  <section>
-    <form action="{% url 'home' %}" method="post" class="login">
+<section>
+  <form action="{% url 'home' %}" method="post" class="login">
+      <img 
+        src="{% static 'images/output-onlinepngtools.png' %}" 
+        alt="Text reads: Bug Collector"
+        class="bug-icon"
+      />
       <h1>Login</h1>
       {% csrf_token %}
       {{ form.as_p }}

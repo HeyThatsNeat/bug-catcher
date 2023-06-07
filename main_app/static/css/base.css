@@ -26,9 +26,9 @@ body {
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
-  --borders: rgb(36, 116, 248) solid 2px;
+  --nav-bg: rgba(192,198,194, 0.2);
+  --nav-bg-ff: rgba(192,198,194, 0.2);
+  --borders: black solid 2px;
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
@@ -37,7 +37,7 @@ body {
   --warn: rgb(255, 102, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
-  --card-box-shadow: 5px 5px 6px -1px #AAA;
+  --card-box-shadow: 7px 6px 11px 1px rgba(0, 0, 0, 0.9);
   --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
@@ -48,7 +48,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg); /* rgba(104, 197, 248, .9) */
   border-bottom: var(--borders);
 }
 
@@ -87,6 +87,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  /* background-color: var(--nav-bg); */
 }
 
 nav li {
@@ -239,7 +240,7 @@ nav li {
   nav,
   .header-logo-container {
     margin: 0;
-    background: var(--nav-bg-ff);
+    /* background: var(--nav-bg); */
     border: var(--borders);
     border-radius: 18px;
   }
@@ -259,13 +260,15 @@ nav li {
     header {
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
+      /* background-color: var(--nav-bg); */
     }
 
     nav,
     .header-logo-container {
-      background: rgba(104, 197, 248, .6);
+      background: var(--nav-bg);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
+      box-shadow: 7px 6px 11px 1px rgba(0, 0, 0, 0.9);
     }
   }
 }

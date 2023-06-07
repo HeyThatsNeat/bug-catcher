@@ -19,13 +19,13 @@
     >
   </div>
   <div class="bug-details">
-    <h1>{{ bug.name }}</h1>
+    <h1>{{ bug.subject }}</h1>
     {% if bug.age > 0 %}
-      <h2>A {{ bug.age }} year old {{ bug.breed }}</h2>
+      <h2>A {{ bug.age }} year old {{ bug.buggedCode }}</h2>
     {% else %}
-      <h2>A {{ bug.breed }} buggy.</h2>
+      <h2>A {{ bug.buggedCode }} buggy.</h2>
     {% endif %}
-    <p>{{ bug.description }}</p>
+    <p>{{ bug.fixedCode }}</p>
     <div class="bug-actions">
       <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
       <a href="{% url 'bug-delete' bug.id %}" class="btn danger">Delete</a>
