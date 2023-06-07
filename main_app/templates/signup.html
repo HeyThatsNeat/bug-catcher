@@ -7,9 +7,9 @@
 
 {% block content %}
 
+<img class="signup-background" src="{% static 'images/signup-wrench.jpeg' %}" alt="wrench/bug signup background"/>
 <div class="page-header">
   <h1>Sign Up</h1>
-  <img src="{% static 'images/nerd-bug.svg' %}" alt="A bug using a computer"/>
 </div>
 {% if error_message %}
   <p class="red-text">{{ error_message }}</p>
