@@ -21,11 +21,11 @@
   <div class="bug-details">
     <h1>{{ bug.subject }}</h1>
     {% if bug.age > 0 %}
-      <h2>A {{ bug.age }} year old {{ bug.buggedCode }}</h2>
+      <h2>A {{ bug.age }} year old {{ bug.bugge_Code }}</h2>
     {% else %}
-      <h2>A {{ bug.buggedCode }} buggy.</h2>
+      <h2>A {{ bug.bugged_Code }} buggy.</h2>
     {% endif %}
-    <p>{{ bug.fixedCode }}</p>
+    <p>{{ bug.fixed_Code }}</p>
     <div class="bug-actions">
       <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
       <a href="{% url 'bug-delete' bug.id %}" class="btn danger">Delete</a>

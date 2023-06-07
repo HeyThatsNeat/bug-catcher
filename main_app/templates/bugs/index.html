@@ -28,11 +28,11 @@
           </div>
           <h2 class="card-title">{{ bug.subject }}</h2>
           {% if bug.age > 0 %}
-            <p>A {{ bug.age }} year old {{ bug.buggedCode }}</p>
+            <p>A {{ bug.age }} year old {{ bug.bugged_Code }}</p>
           {% else %}
-            <p>A {{ bug.buggedCode }} kitten.</p>
+            <p>A {{ bug.bugged_Code }} kitten.</p>
           {% endif %}
-          <p><small>{{ bug.fixedCode }}</small></p>
+          <p><small>{{ bug.fixed_Code }}</small></p>
         </div>
       </a>
     </div>
