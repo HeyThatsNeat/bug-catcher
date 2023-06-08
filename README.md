@@ -10,3 +10,18 @@ the [lady bug background login page](https://www.istockphoto.com/photo/computer-
 the [colorful tiny ladybuy](https://www.clipartmax.com/middle/m2H7G6A0H7N4m2i8_computer-bug-clipart-software-bug-patch-tuesday-clip-computer-bugs/) on the login form was made by an unknown person found on (Clipartmax)[https://www.clipartmax.com/]
 
 the [sign up background image](https://stock.adobe.com/search/images?k=software+bug&asset_id=231685699) was made by [Alexander](https://stock.adobe.com/contributor/205980439/alexander?load_type=author&prev_url=detail)
+
+the [all bugs background](https://www.flickr.com/photos/28815687@N05/3089024096) was made by [Robi](https://www.flickr.com/photos/28815687@N05/)
+
+the [delete confirmation page background](https://one2one.sparklight.com/top-signs-you-may-have-a-computer-virus/) was made by an unknown person
+
+the [add bug background](https://codoid.com/software-testing/common-reasons-bugs-go-undetected/) was made by and unknown person
+
+the [about page background](https://www.flickr.com/photos/batiks/7610535900) was made by [Uschi](https://www.flickr.com/photos/batiks/)
+
+the [bug detail background](https://www.techslang.com/definition/what-is-a-computer-bug/) was made by an unknonw person
+
+the [edit/update background](https://www.bitdefender.com/blog/hotforsecurity/microsoft-rolls-out-emergency-updates-for-windows-server-and-vpn-bugs/) was made by an unknown person and was edited using [Canva](https://www.canva.com/)
+
+
+
