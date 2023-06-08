@@ -11,24 +11,23 @@
 
 {% block content %}
 
+<img class="bug-detail-img" src="{% static 'images/bug-detail-background.jpg' %}" alt="The bug detail background" />
 <section class="bug-container">
-  <div class="bug-img">
-    <img 
-      src="{% static 'images/sk8r-boi-bug.svg' %}" 
-      alt="A skater boy bug"
-    >
-  </div>
   <div class="bug-details">
-    <h1>{{ bug.subject }}</h1>
-    {% if bug.age > 0 %}
-      <h2>A {{ bug.age }} year old {{ bug.bugge_Code }}</h2>
-    {% else %}
-      <h2>A {{ bug.bugged_Code }} buggy.</h2>
-    {% endif %}
-    <p>{{ bug.fixed_Code }}</p>
-    <div class="bug-actions">
-      <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
-      <a href="{% url 'bug-delete' bug.id %}" class="btn danger">Delete</a>
+    <div class="info-in-box-div">
+      <h1>{{ bug.subject }}</h1>
+      {% if bug.age > 0 %}
+        <h2>A {{ bug.age }} year old {{ bug.bugge_Code }}</h2>
+      {% else %}
+        <h2>A {{ bug.bugged_Code }} buggy.</h2>
+      {% endif %}
+      <p>{{ bug.fixed_Code }}</p>
+      {% if user == bug.user %}
+        <div class="bug-actions">
+          <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
+          <a href="{% url 'bug-delete' bug.id %}" class="btn danger">Delete</a>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

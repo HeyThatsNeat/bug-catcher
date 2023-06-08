@@ -5,11 +5,36 @@
   flex-wrap: wrap;
 }
 
+.all-bugs-page-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
 .card {
   width: 275px;
   margin: 10px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
+  border-radius: 25px;
+  background-color: rgba(250,240,80,.9);
+}
+
+.bug-list-h1 {
+  color: black ;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 7px 5px black;
+}
+
+section.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-content {
