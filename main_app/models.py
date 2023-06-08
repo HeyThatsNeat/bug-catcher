@@ -6,7 +6,7 @@ class Bug(models.Model):
   subject = models.CharField(max_length=100)
   bugged_Code = models.TextField(max_length=100000)
   fixed_Code = models.TextField(max_length=100000)
-  age = models.IntegerField()
+  language = models.CharField(max_length=100)
   user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
