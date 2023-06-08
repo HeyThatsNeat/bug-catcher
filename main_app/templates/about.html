@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-
-<h1>About the Bug Catcher</h1>
-<hr />
-<p class="page-content">
-  I like long romantic walks down the produce aisle. Also, I am currently job seeking!
-</p>
+<img class="about-page-img" src="{% static 'images/about-page-background.jpg' %}" alt="The about page background" />
+<div class="about-page-div">
+  <h1 class="about-page-h1">About the Bug Catcher</h1>
+  <hr />
+  <p class="page-content">
+    I like long romantic walks down the produce aisle. Also, I am currently job seeking!
+  </p>
+</div>
 
 {% endblock %}
