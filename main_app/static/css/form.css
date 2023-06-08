@@ -1,7 +1,37 @@
-.form-container {
+form.form-container {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p.red-text {
+  color: var(--danger);
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+}
+
+button.btn.submit {
+  background-color: rgba(131,206,237, 1);
+  color: black;
+  border-color: black;
+}
+
+.signup-table {
+  border-style: solid;
+  border-radius: 25px;
+  background-color: rgba(131,206,237,0.8);
+  box-shadow: 7px 11px 11px 1px rgba(0, 0, 0, 1);
+}
+
+div.header-logo-container {
+  visibility: hidden;
 }
 
 img.signup-background {
@@ -15,9 +45,15 @@ img.signup-background {
   z-index: -3;
 }
 
+.signup-h1 {
+  color: black ;
+  -webkit-text-stroke: 1px rgba(131,206,237,1);
+}
+
 table {
+  margin-left: 1%;
   padding: 0 40px;
-  width: 100%;
+  width: 97%;
   border-spacing: 0 20px;
 }
 
@@ -47,4 +83,5 @@ td > textarea {
 .btn {
   align-self: flex-end;
   margin-right: 40px;
+  margin-top: 20px;
 }
