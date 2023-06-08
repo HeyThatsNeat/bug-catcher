@@ -221,6 +221,11 @@
     justify-content: start;
   }
 
+  .bug-details {
+    max-height: 775px;
+    overflow: auto;
+  }
+
   .bug-img {
     width: 25%;
     max-width: 250px;
