@@ -28,6 +28,10 @@
   border-radius: var(--card-border-radius);
 }
 
+.indent-textarea {
+  padding-left: 20px; /* Adjust the indentation as per your preference */
+}
+
 .bug-details {
   width: 98%;
   background-color: rgba(125,183,203,.8);

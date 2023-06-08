@@ -4,9 +4,9 @@ from django.urls import reverse
 
 class Bug(models.Model):
   subject = models.CharField(max_length=100)
-  bugged_Code = models.TextField(max_length=100000)
-  fixed_Code = models.TextField(max_length=100000)
-  language = models.CharField(max_length=100)
+  bugged_Code = models.TextField()
+  fixed_Code = models.TextField()
+  language = models.CharField(max_length=100, verbose_name = "Language(s)")
   user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):

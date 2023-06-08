@@ -21,16 +21,8 @@
     <div class="card">
       <a href="{% url 'bug-detail' bug.id %}">
         <div class="card-content">
-          <div class="card-img-container">
-            <img 
-              src="{% static 'images/sk8r-boi-bug.svg' %}" 
-              alt="A skater boy bug"
-            >
-          </div>
           <h2 class="card-title">{{ bug.subject }}</h2>
-          <p>Languages: {{ bug.language }}.</p>
-          <p><small>Bugged Code: {{ bug.bugged_Code }}</small></p>
-          <p><small>Fixed Code: {{ bug.fixed_Code }}</small></p>
+          <p>Language(s): {{ bug.language }}.</p>
         </div>
       </a>
     </div>

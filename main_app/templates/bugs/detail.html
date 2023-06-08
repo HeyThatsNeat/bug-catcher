@@ -17,8 +17,20 @@
     <div class="info-in-box-div">
       <h1>{{ bug.subject }}</h1>
       <h2>Language(s): {{ bug.language }}.</h2>
-      <p>Bugged Code: {{ bug.bugged_Code }}</p>
-      <p>Fixed Code: {{ bug.fixed_Code }}</p>
+      <p>Bugged Code: 
+        <pre>
+          <code>
+            {{ bug.bugged_Code }}
+          </code>
+        </pre>
+      </p>
+      <p>Fixed Code: 
+        <pre>
+          <code>
+            {{ bug.fixed_Code }}
+          </code>
+        </pre>
+      </p>
       {% if user == bug.user %}
         <div class="bug-actions">
           <a href="{% url 'bug-update' bug.id %}" class="btn warn">Edit</a>
