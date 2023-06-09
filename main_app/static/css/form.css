@@ -73,10 +73,6 @@ button.btn.submit:hover {
   box-shadow: 7px 11px 11px 1px rgba(0, 0, 0, 1);
 }
 
-div.header-logo-container {
-  visibility: hidden;
-}
-
 img.signup-background {
   position: absolute;
   top: 0;

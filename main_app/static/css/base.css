@@ -87,17 +87,11 @@ nav ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: var(--nav-bg); */
+  margin: 0 10px;
 }
 
 nav li {
   padding: 5px 8px;
-}
-
-.header-logo-container {
-  margin: auto;
-  padding: 10px 20px 0;
-  max-width: 500px;
 }
 
 .page-header {
@@ -155,6 +149,7 @@ img.about-page-img {
 
 .about-page-h1 {
   margin: 14px 15px;
+  text-align: center;
 }
 
 hr {
@@ -162,7 +157,7 @@ hr {
 }
 
 .about-page-div {
-  margin: 14px 15px 16px 15px;
+  margin: 40px 15px 40px 15px;
   border-style: solid;
   border-radius: 25px;
   background-color: rgba(251, 121, 16, .8);
@@ -240,17 +235,6 @@ hr {
     min-height: calc(100vh - 53px);
   }
 
-  nav,
-  .header-logo-container {
-    margin: 10px 0;
-    padding: 0 15px;
-  }
-
-  /* visual fix to help align logo */
-  .header-logo-container {
-    padding-top: 3px;
-  }
-
   nav {
     margin-left: auto;
     display: flex;
@@ -259,10 +243,6 @@ hr {
 
   nav ul {
     flex-wrap: nowrap;
-  }
-
-  .header-logo-container {
-    width: 213px;
   }
 
   .page-header h1 {
@@ -301,34 +281,20 @@ hr {
     border-bottom: none;
   }
 
-  nav,
-  .header-logo-container {
+  nav {
     margin: 0;
-    /* background: var(--nav-bg); */
     border: var(--borders);
     border-radius: 18px;
-  }
-
-  nav {
     margin-left: auto;
-  }
-
-  .header-logo-container {
-    /* visual fix to help align logo */
-    padding-top: 6px;
-    width: 256px;
-    height: 35px;
   }
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
       -webkit-backdrop-filter: none;
       backdrop-filter: none;
-      /* background-color: var(--nav-bg); */
     }
 
-    nav,
-    .header-logo-container {
+    nav {
       background: var(--nav-bg);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
