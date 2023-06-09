@@ -49,6 +49,12 @@ pre {
   border-radius: var(--card-border-radius);
 }
 
+.bug-subject-h1 {
+  word-break: break-all;
+  word-wrap: break-word;
+  display: inline;
+}
+
 .bug-details {
   width: 98%;
   background-color: rgba(125,183,203,.8);
