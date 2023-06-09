@@ -7,6 +7,14 @@
   justify-content: center;
 }
 
+.bugged-code-code-tag, .fixed-code-code-tag {
+  font-size: 15px;
+}
+
+pre {
+  margin: 15px 0 45px 12px !important;
+}
+
 .bug-detail-img {
   position: absolute;
   top: 0;
@@ -28,15 +36,13 @@
   border-radius: var(--card-border-radius);
 }
 
-.indent-textarea {
-  padding-left: 20px; /* Adjust the indentation as per your preference */
-}
-
 .bug-details {
   width: 98%;
   background-color: rgba(125,183,203,.8);
   border-style: solid;
   border-radius: 25px;
+  max-height: 760px;
+  overflow: auto;
 }
 
 .info-in-box-div {
@@ -231,20 +237,3 @@
     max-width: 250px;
     margin-right: 25px;
   }
-
-  .feedings-toy-container {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  .feedings-toy-container > section {
-    width: 45%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .feedings-toy-container {
-    padding: 0 40px;
-  }
-}
