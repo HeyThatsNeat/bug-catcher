@@ -19,7 +19,7 @@ Computer bugs are the heart and soul of every programming project development. W
 ---
 
 ## Attributions
-* Credits can be found [here]()
+* Credits can be found [here](https://github.com/HeyThatsNeat/bug-catcher/blob/main/attributions.md)!
 
 ---
 
