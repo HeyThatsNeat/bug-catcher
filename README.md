@@ -24,8 +24,8 @@ Computer bugs are the heart and soul of every programming project development. W
 ---
 
 ## Coming Soon
-* A sort by language drop down
-* A file location field for more specifity
+* A sort by language drop-down
+* A file location field for more specificity
 * A search bar
 
 
