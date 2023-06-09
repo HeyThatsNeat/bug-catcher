@@ -4,9 +4,9 @@
 ---
 
 ### Fonts 
-* The [Figtree](https://fonts.google.com/specimen/Figtree?query=fig) font was made by [Erik Kennedy](https://fonts.google.com/?query=Erik+Kennedy) through [Google Fonts](https://fonts.google.com/).
+* The [Figtree](https://fonts.google.com/specimen/Figtree?query=fig) font was made by [Erik Kennedy](https://fonts.google.com/?query=Erik+Kennedy) through [Google Fonts](https://fonts.google.com/)
 
-* The [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono?query=IBM) font was made by [Mike Abbink](https://fonts.google.com/?query=Mike+Abbink) and [Bold Monday](https://fonts.google.com/?query=Bold+Monday) through [Google Fonts](https://fonts.google.com/).
+* The [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono?query=IBM) font was made by [Mike Abbink](https://fonts.google.com/?query=Mike+Abbink) and [Bold Monday](https://fonts.google.com/?query=Bold+Monday) through [Google Fonts](https://fonts.google.com/)
 
 ---
 ### Pictures
