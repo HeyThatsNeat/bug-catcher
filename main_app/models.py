@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 class Bug(models.Model):
-  subject = models.CharField(max_length=100)
+  subject = models.CharField(max_length=300)
   bugged_Code = models.TextField()
   fixed_Code = models.TextField()
   language = models.CharField(max_length=100, verbose_name = "Language(s)")

@@ -28,11 +28,11 @@ class BugCreate(LoginRequiredMixin, CreateView):
     form.instance.user = self.request.user
     return super().form_valid(form)
 
-class BugUpdate(UpdateView):
+class BugUpdate(LoginRequiredMixin, UpdateView):
   model = Bug
   fields = ['language', 'bugged_Code', 'fixed_Code']
 
-class BugDelete(DeleteView):
+class BugDelete(LoginRequiredMixin, DeleteView):
   model = Bug
   success_url = '/bugs/'
 

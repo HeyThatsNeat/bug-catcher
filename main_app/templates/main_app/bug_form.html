@@ -8,7 +8,11 @@
 {% block content %}
 
 {% if bug %}
-  <img class="edit-bug-page-img" src="{% static 'images/edit-bug-background.jpg' %}" alt="edit bug background" />
+  <img 
+    class="edit-bug-page-img" 
+    src="{% static 'images/edit-bug-background.jpg' %}" 
+    alt="edit bug background" 
+  />
   <div class="edit-bug-page-contents">
     <div class="page-header">
       <h1 class="edit-title-h1">Edit "{{ bug.subject }}"</h1>
@@ -22,7 +26,11 @@
     </form>
   </div>
 {% else %}
-  <img class="add-bug-page-img" src="{% static 'images/add-bug-background.jpg' %}" alt="add bug background" />
+  <img 
+    class="add-bug-page-img" 
+    src="{% static 'images/add-bug-background.jpg' %}" 
+    alt="add bug background" 
+  />
   <div class="add-bug-page-contents">
     <div class="page-header">
       <h1>Add a Bug</h1>
