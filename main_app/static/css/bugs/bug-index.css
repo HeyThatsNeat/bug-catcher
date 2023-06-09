@@ -72,9 +72,15 @@ section.page-header {
 .card h2 {
   margin: 10px 0;
   font-size: var(--font-xl);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
+}
+
+.languages-p {
+  font-family: 'IBM Plex Mono', monospace;
+  word-spacing: -3px;
 }

@@ -53,11 +53,13 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   display: inline;
+  font-family: 'IBM Plex Mono', monospace;
+  word-spacing: -4px;
 }
 
 .bug-details {
   width: 98%;
-  background-color: rgba(125,183,203,.8);
+  background-color: rgba(125,183,203,.9);
   border-style: solid;
   border-radius: 25px;
   max-height: 760px;
@@ -73,6 +75,7 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .feedings-toy-container {
@@ -133,6 +136,15 @@ pre {
   margin: 0 0 10px;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.languages-h3 {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.bugged-code-h3, .fixed-code-h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: underline;
 }
 
 .bug-details h3 {

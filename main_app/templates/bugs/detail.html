@@ -16,10 +16,10 @@
   <div class="bug-details">
     <div class="info-in-box-div">
       <h1 class="bug-subject-h1">{{ bug.subject }}</h1>
-      <h3>Language(s): {{ bug.language }}.</h3>
-      <h3>Bugged Code:</h3>
+      <h3 class="languages-h3">Language(s): {{ bug.language }}</h3>
+      <h3 class="bugged-code-h3">Bugged Code:</h3>
       <pre><code class="bugged-code-code-tag">{{ bug.bugged_Code }}</code></pre>
-      <h3>Fixed Code:</h3>
+      <h3 class="fixed-code-h3">Fixed Code:</h3>
       <pre><code class="fixed-code-code-tag">{{ bug.fixed_Code }}</code></pre>
       {% if user == bug.user %}
         <div class="bug-actions">

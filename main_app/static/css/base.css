@@ -42,7 +42,7 @@ body {
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
   --font-l: 1.8rem;
-  --font-reg: 1.6rem;
+  --font-reg: 1.8rem;
   --card-border-radius: 6px;
 }
 
@@ -119,6 +119,7 @@ nav li {
   border-radius: 25px;
   overflow: auto;
   box-shadow: 7px 6px 11px 1px rgba(0, 0, 0, 0.9);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .delete-confirmation-page-img {
@@ -161,6 +162,7 @@ hr {
   border-style: solid;
   border-radius: 25px;
   background-color: rgba(251, 121, 16, .8);
+  font-family: 'Figtree', sans-serif;
 }
 
 .btn {
@@ -218,7 +220,8 @@ hr {
 
 .page-content {
   font-size: var(--font-reg);
-  margin: 16px 15px;
+  margin: 16px 35px;
+  word-spacing: 2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -239,6 +242,7 @@ hr {
     margin-left: auto;
     display: flex;
     justify-content: center;
+    font-family: 'Figtree', monospace;
   }
 
   nav ul {

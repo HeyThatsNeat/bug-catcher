@@ -20,6 +20,13 @@ label {
   z-index: -3;
 }
 
+.page-header {
+  word-wrap: break-word;
+  word-break: break-all;
+  word-spacing: -10px;
+  margin-left: 52px;
+}
+
 .edit-bug-page-img {
   position: absolute;
   top: 0;
@@ -37,6 +44,7 @@ label {
   background-color: rgba(200,38,47,.8);
   margin: 40px 0;
   box-shadow: 7px 11px 11px 1px rgba(0, 0, 0, 1);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .edit-bug-page-contents {
@@ -45,8 +53,16 @@ label {
   background-color: rgba(18,101,153,.8);
   margin: 40px 0;
   box-shadow: 7px 11px 11px 1px rgba(0, 0, 0, 1);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
+#id_language, #id_subject {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#id_bugged_Code, #id_fixed_Code {
+  font-family: monospace;
+}
 
 p.red-text {
   color: var(--danger);
@@ -71,6 +87,8 @@ button.btn.submit:hover {
   border-radius: 25px;
   background-color: rgba(131,206,237,0.8);
   box-shadow: 7px 11px 11px 1px rgba(0, 0, 0, 1);
+  font-family: 'Figtree', monospace;
+  word-spacing: 2px;
 }
 
 img.signup-background {
@@ -87,6 +105,7 @@ img.signup-background {
 .signup-h1 {
   color: black ;
   -webkit-text-stroke: 1px rgba(131,206,237,1);
+  word-spacing: -13px;
 }
 
 table {

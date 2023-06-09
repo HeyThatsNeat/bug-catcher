@@ -30,6 +30,7 @@ main > section {
 form.login {
   border-style: solid;
   box-shadow: 7px 6px 11px 1px rgba(0, 0, 0, 0.9);
+  font-family: 'Figtree', monospace;
 }
 
 .login {

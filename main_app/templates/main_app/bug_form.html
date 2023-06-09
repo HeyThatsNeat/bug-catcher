@@ -11,7 +11,7 @@
   <img class="edit-bug-page-img" src="{% static 'images/edit-bug-background.jpg' %}" alt="edit bug background" />
   <div class="edit-bug-page-contents">
     <div class="page-header">
-      <h1>Edit {{ bug.subject }}</h1>
+      <h1 class="edit-title-h1">Edit "{{ bug.subject }}"</h1>
     </div>
     <form action="" method="post" class="form-container">
       {% csrf_token %}
