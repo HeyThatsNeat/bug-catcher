@@ -62,6 +62,10 @@ button.btn.submit {
   border-color: black;
 }
 
+button.btn.submit:hover {
+  background-color: rgb(156, 87, 2)
+}
+
 .signup-table {
   border-style: solid;
   border-radius: 25px;
