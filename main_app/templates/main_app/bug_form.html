@@ -7,20 +7,33 @@
 
 {% block content %}
 
-<div class="page-header">
-  {% if bug %}
-    <h1>Edit {{ bug.subject }}</h1>
-  {% else %}
-    <h1>Add a Bug</h1>
-    <img src="{% static 'images/nerd-bug.svg' %}" alt="A bug using a computer"/>
-  {% endif %}
-</div>
-<form action="" method="post" class="form-container">
-  {% csrf_token %}
-  <table>
-    {{ form.as_table }}
-  </table>
-  <button type="submit" class="btn submit">Submit!</button>
-</form>
+{% if bug %}
+  <div class="edit-bug-page-contents">
+    <div class="page-header">
+      <h1>Edit {{ bug.subject }}</h1>
+    </div>
+    <form action="" method="post" class="form-container">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="btn submit">Submit!</button>
+    </form>
+  </div>
+{% else %}
+  <img class="add-bug-page-img" src="{% static 'images/add-bug-background.jpg' %}" alt="add bug background" />
+  <div class="add-bug-page-contents">
+    <div class="page-header">
+      <h1>Add a Bug</h1>
+    </div>
+    <form action="" method="post" class="form-container">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="btn submit">Submit!</button>
+    </form>
+  </div>
+{% endif %}
 
 {% endblock %}
